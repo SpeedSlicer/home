@@ -1,45 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpeedSlicer's Projects</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="dark-mode">
+
+<body>
+  <div id="visualizer-container">
+    <canvas id="visualizer"></canvas>
+  </div>
+  <div id="content">
     <header>
-        <div class="logo">
-        </div>
-        <h1>Speedslicer's Projects</h1>
-        <nav>
-            <a href="https://github.com/SpeedSlicer/" class="btn btn-primary">GitHub</a>
-            <a href="https://github.com/SpeedSlicer/" class="btn btn-primary">Discord Server</a>
-            <a href="https://www.youtube.com/@speedslicerx" class="btn btn-primary">Youtube Channel </a>
-
-        </nav>
+      <h1>About Me</h1>
     </header>
-    <main>
-        <section id="github-projects">
-            <h2>Projects</h2>
-            <div id="github-repos">
-                <div class="repo-item">
-                    <h3><a href="https://launcher.speedslicer.dev" target="_blank" class="btn btn-secondary">Eclipse Launcher</a></h3>
-                    <p>An Eaglercraft Launcher</p>
-                    <a href="https://github.com/SpeedSlicer/Eclipse-Launcher" class="btn btn-secondary">Source</a>
+    <section id="intro">
+      <div class="profile-wrapper">
+        <img src="images/pfp.jpg" alt="Your Photo" class="profile-pic">
+        <p>Hello! I'm Shaun, a passionate <span id="profession">Web Developer</span>. Here’s a bit about me...</p>
+      </div>
+    </section>
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>UX and UI Development</li>
+        <li>Music Design</li>
+        <li>Programming</li>
+        <li>Boating</li>
 
-                </div>
-                <div class="repo-item">
-                    <h3><a href="https://github.com/SpeedSicer" target="_blank" class="btn btn-secondary">WIP</a></h3>
-                    <p>Something in progress...</p>
-                </div>
-            </div>
-        </section>
-        <section id="other-projects">
-            <h2>APIs</h2>
-            <a href="https://github.com/SpeedSlicer/GeneralAdditionsJS" class="btn btn-secondary">GeneralJS</a>
-            <a href="https://github.com/SpeedSlicer/CookieNCacheJS" class="btn btn-secondary">CookiesNCacheJS</a>
-        </section>
-    </main>
-   
+      </ul>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Discord: <a>@speedslicer</a></p>
+    </section>
+    <section id="social-media">
+      <h2>Connect with me</h2>
+      <div class="social-buttons">
+        <a href="https://github.com/SpeedSlicer" class="social-button github" target="_blank">GitHub</a>
+        <a href="https://discord.gg/YKgfuFvKhA" class="social-button youtube" target="_blank">Discord</a>
+      </div>
+    </section>
+    <section id="favorites">
+      <h2>My Favorites</h2>
+      <div class="favorites-container">
+        <div class="favorites-category">
+          <h3>Favorite Singers</h3>
+          <ul>
+            <li>Eve</li>
+            <li>Ado</li>
+            <li>Yoasobi</li>
+          </ul>
+        </div>
+        <div class="favorites-category">
+          <h3>Favorite Songs</h3>
+          <ul>
+            <li>Dramaturgy (Eve)</li>
+            <li>Wild Side (Ali)</li>
+            <li>Bokurano (Eve) </li>
+          </ul>
+        </div>
+        <div class="favorites-category">
+          <h3>Favorite Shows</h3>
+          <ul>
+            <li>Mob Psycho 100</li>
+            <li>One Piece</li>
+            <li>One Punch Man</li>
+          </ul>
+        </div>
+        <div class="favorites-category">
+          <h3>Favorite Books</h3>
+          <ul>
+            <li>Lord of the Rings (Series)</li>
+            <li>Three Black Swans</li>
+            <li>Harry Potter (Series)</li>
+          </ul>
+        </div>
+        <div class="favorites-category">
+          <h3>Favorite Things</h3>
+          <ul>
+            <li>Art</li>
+            <li>Pirated FL Studio 🏴‍☠️</li>
+            <li>The Internet</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+  <audio id="background-music" preload="auto"></audio>
+  <div id="overlay">
+    <h2>Turn up your volume!</h2>
+    <button id="start-button">Ok!</button>
+  </div>
+  <script src="script.js"></script>
 </body>
+
 </html>
